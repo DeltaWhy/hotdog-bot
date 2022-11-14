@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "hotdogbot"
+version = "0.1.0"
+description = ""
+authors = ["Michael Limiero <mike5713@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+"discord.py" = "^2.0.1"
+python-dotenv = "^0.21.0"
+rich = "^12.6.0"
+pint = "^0.20.1"
+aiohttp = {extras = ["speedups"], version = "^3.8.3"}
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^5.0.4"
+black = "^22.10.0"
+isort = "^5.10.1"
+pre-commit = "^2.20.0"
+bandit = "^1.7.4"
+flake8-bandit = "^4.1.1"
+pytest = "^7.2.0"
+mypy = "^0.982"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
